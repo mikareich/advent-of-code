@@ -1,3 +1,5 @@
+// https://adventofcode.com/2025/day/2
+
 use std::fs;
 
 type Range = (u64, u64);
@@ -52,7 +54,7 @@ pub fn sum_invalid_ids() -> Option<()> {
     let ranges = read_ranges(false)?;
 
     let get_length = |w: u64| (w.ilog10() + 1) as u8;
-    let get_prefix = |w: u64, i: u8| w / (10 as u64).pow((get_length(w) - i) as u32);
+    let get_prefix = |w: u64, i: u8| w / BASE_10.pow((get_length(w) - i) as u32);
 
     let mut id_sum = 0;
 
