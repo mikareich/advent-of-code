@@ -1,5 +1,5 @@
-mod day1;
+mod day2;
 
 fn main() {
-    day1::get_password();
+    day2::sum_invalid_ids();
 }
