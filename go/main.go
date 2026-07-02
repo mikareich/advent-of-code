@@ -5,6 +5,7 @@ import (
 	"strconv"
 
 	"github.com/mikareich/advent-of-code/g/day6"
+	"github.com/mikareich/advent-of-code/g/day7"
 )
 
 const DAY_ARG = "--day"
@@ -57,6 +58,8 @@ func main() {
 	switch day {
 	case 6:
 		day6.Solve(input)
+	case 7:
+		day7.Solve(input)
 	default:
 		panic("Invalid day specified")
 	}
