@@ -82,9 +82,6 @@ func Solve(input string) {
 			if err == nil {
 				intermediateSum = predicate(intermediateSum, value)
 			}
-
-			fmt.Printf("%v \n", value)
-
 		}
 
 		// compute total sum
